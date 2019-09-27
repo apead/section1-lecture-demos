@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoo;
+using StringHelpers;
 
 namespace Section1
 {
@@ -7,7 +8,17 @@ namespace Section1
     {
         static void Main(string[] args)
         {
-           
+
+               LectureDemos lectureDemos = new LectureDemos();
+               lectureDemos.NumbersAdding();
+//               lectureDemos.NumberRanges();
+
+//               lectureDemos.DisplayIfStatement();
+//               lectureDemos.DisplayEnums();
+//               lectureDemos.DisplayForLoops();
+//               lectureDemos.DisplayStucts();
+
+
 /*                     HelloWorld helloWorldInstance = new HelloWorld();
                helloWorldInstance.DisplayMessage();
 
@@ -16,7 +27,6 @@ namespace Section1
 
                Console.WriteLine("My Number is " + myNumber);
 */
-                LectureDemos lectureDemos = new LectureDemos();
 /*                lectureDemos.DisplayStringVariables();
                lectureDemos.DisplayStringConcat();
                lectureDemos.DisplayStringInterpollation();
@@ -27,9 +37,12 @@ namespace Section1
 
 //                lectureDemos.SplitAllCharacters();
              //   lectureDemos.StringContains();
-                lectureDemos.StringIndexOf();
+             //   lectureDemos.StringIndexOf();
 
-        }
+//            var stringHelper = new StringUtilities();
+//            var reversedString = stringHelper.ReverseString("Hello Planet");
+//            Console.WriteLine(reversedString);
+       }
 
 private void Parked()
 {

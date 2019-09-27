@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Section1
 {
@@ -99,7 +100,120 @@ namespace Section1
             Console.WriteLine("String has Cat: " + mystring.IndexOf("Cat"));
         }
 
+        public void NumbersAdding()
+        {
+            int x = 5; int y = 10;
+
+            int myanswer = x + y;
+            Console.WriteLine(myanswer);
+        }
+
+        public void NumberRanges()
+        {
+            int max = int.MaxValue;
+            int min = int.MinValue;
+
+            Console.WriteLine($"The range of integers is {min} to {max}");
+
+        }
+
+        public void DisplayEnums()
+        {
+            Day myDay = Day.Fri;
+
+            if (myDay == Day.Fri)
+                Console.WriteLine("It's Almost weekend");
+            else
+            {
+                Console.WriteLine("Still a long way to go");
+            }
+
+
+            Console.WriteLine("Day of the week" + myDay);
+        }
+
+        public void DisplayStucts()
+        {
+            Coords coords;
+            coords.x = 10;
+            coords.y = 20;
+            Console.WriteLine("X: " + coords.x);
+            Console.WriteLine("Y: " + coords.y);
+        }
+
+        public void DisplayIfStatement()
+        {
+
+            int x = 15;
+            int y = 6;
+
+            if (x - y < 12)
+                Console.WriteLine("The answer is less than 10.");
+        }
+
+        public void DisplayIfElse()
+        {
+            int x = 2;
+            int y = 3;
+            int z = 3;
+
+            if ((x * y > 10) && (y == z))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("And the first number is equal to the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("Or the first number is not equal to the second");
+            }
+        }
+
+        public void DisplayIfBooleanLogic()
+        {
+            int x = 2;
+            int y = 3;
+            int z = 3;
+
+            if ((x * y > 10) && (y == z))
+            {
+                Console.WriteLine("The answer is greater than 10");
+                Console.WriteLine("And the first number is equal to the second");
+            }
+            else
+            {
+                Console.WriteLine("The answer is not greater than 10");
+                Console.WriteLine("Or the first number is not equal to the second");
+            }
+
+        }
+
+        public void DisplayWhileLoops()
+        {
+            int counter = 0;
+
+            while (counter < 10)
+            {
+                Console.WriteLine($"Hello World! The counter is {counter}");
+                counter++;
+            }
+        }
+
+        public void DisplayForLoops()
+        {
+            for (int index = 0; index < 10; index++)
+            {
+                Console.WriteLine($"Hello World! The index is {index}");
+            }
+        }
+
+        public void DisplayCollectionsForEach()
+        {
+            var names = new List<string> { "Bob", "Craig", "John" };
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+        }
     }
-
-
 }
